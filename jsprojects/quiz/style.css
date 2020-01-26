@@ -1,0 +1,63 @@
+body{
+    margin: 0px;
+}
+header{
+    color: rgb(26, 26, 192);
+    font-size: xx-large;
+    margin: 40px auto;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 2;
+    word-spacing: 2;
+    text-shadow: 0 1px 1px rgb(0, 0, 14)
+
+}
+section{
+    background: radial-gradient(rgb(26, 26, 192), rgb(54, 54, 117));
+    height: auto;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    color: white;
+    font-size: 20px;
+    font-family:cursive;
+}
+
+.quiz-block{
+    margin:30px auto;
+    padding: 10px;
+    background-color:white;
+    color: rgb(26, 26, 192);
+    width: 80%;
+    max-width: 600px;
+}
+
+.answer{
+    margin: 20px;
+}
+
+.btn{
+    display: block;
+    color: white;
+    background: repeating-linear-gradient(rgb(138, 55, 55),rgb(52, 52, 148),rgb(73, 175, 73),rgb(209, 209, 68));
+    padding: 3px 10px;
+    margin: 4px auto;
+    font-size: x-large;
+    font-family: cursive;
+    width: 40%;
+    text-shadow: 0 1px 1px rgb(26, 26, 192);
+    border: solid 1px rgb(26, 26, 192);
+    box-shadow: 0 1px 1px 0 rgb(26, 26, 192);
+    outline: none;
+}
+    .btn:active{
+        background: repeating-linear-gradient(rgb(100, 17, 17),rgb(11, 11, 134),rgb(7, 68, 7),rgb(68, 68, 5));
+        position: relative;
+        top: 2px;
+    }
+
+
+#score-holder{
+    display: none;
+}
