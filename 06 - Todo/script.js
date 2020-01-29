@@ -30,6 +30,8 @@ addForm.addEventListener('submit', (e) =>{
         generateTemplate(todo);
     }
     addForm.reset();
+    //incase if on filtermode during addition of new todos
+    filterTodos(search.value);
 });
 
 
