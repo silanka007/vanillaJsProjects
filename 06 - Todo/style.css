@@ -57,7 +57,8 @@ body{
     overflow: wrap;
 }
 .todo__item{
-    position: relative;
+    overflow: wrap;
+    height: auto;
 }
 
 .del{
