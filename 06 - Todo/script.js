@@ -46,7 +46,6 @@ Todos.addEventListener('click', (e) =>{
 //filtering through the list of todos
 Search.addEventListener('keyup', (e) =>{
     search.parentElement.addEventListener('submit', (e) => e.preventDefault());
-
     searchTerm = e.target.value.toLowerCase().trim();
     filterTodos(searchTerm);
 })
