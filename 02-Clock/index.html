@@ -48,6 +48,21 @@
         0 0 10px rgba(0,0,0,0.2);
     }
 
+    .clock:before{
+      content: "";
+      width: 10%;
+      height: 10%;
+      background: black;
+      position: absolute;
+      border-radius: 100%;
+      /* left: -50%; */
+      top: 45%;
+      left: 45%;
+      z-index: 100;
+      
+
+    }
+
     .clock-face {
       position: relative;
       width: 100%;
@@ -65,6 +80,8 @@
       transform: rotate(90deg);
       transition: all 0.05s;
       transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+      clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
+
     }
     .hour-hand{
       width: 40%; 
@@ -75,6 +92,7 @@
   const secondsHand = document.querySelector('.second-hand');
   const minutesHand = document.querySelector('.min-hand');
   const hourHand = document.querySelector('.hour-hand');
+  
 function setTime(){
   const now = new Date();
   const seconds = now.getSeconds();
